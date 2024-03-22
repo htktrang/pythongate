@@ -11,4 +11,36 @@ March 22,2024
 > git push -u origin main
 - add .gitignore
 - setup python working directory
-> py -m venv venv
+
+Download and install python 3.11.8 (the current python version is 3.12.2)
+https://www.python.org/downloads/release/python-3118/
+
+- install alias on terminal
+> py -m pip install alias
+
+- Add the python 3.11.8 to the environment variables
+On Windows
+Click the Windows button and type "environment variables" to display a list of options.
+Click the Edit the system environment variables option. ...
+Click the Environment Variables button.
+- Edit user path
+- Add new path
+C:\Users\HOME\AppData\Local\Programs\Python\Python311
+- reset vscode to able to update the window path
+
+HOW TO CHANCE PYTHON VERSION
+On terminal, set alias for the python version (Note that this is a temporary Alias for the current session)
+> Set-Alias -Name py11 -Value "C:\Users\HOME\AppData\Local\Programs\Python\Python311\python.exe"
+> py11 --version
+
+Create a virtual environment named venv3.11 (https://python.land/virtual-environments/virtualenv)
+> py11 -m venv venv3.11s
+
+Open a notebook (.ipynb) file
+- select interpreter on vscode
+-- press Ctrl+Shift+P
+-- search: interpreter (Python: Select interpreter)
+-- select the working version (venv3.11)
+- Open a code cell and check python version
+!py --version
+> Python 3.11.8
