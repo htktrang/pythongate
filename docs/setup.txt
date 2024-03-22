@@ -1,0 +1,14 @@
+March 22,2024
+- setup github
+- create a new respository in github
+- create a new repository on the command line
+> echo "# pythongate" >> README.md
+> git init
+> git add README.md
+> git commit -m "first commit"
+> git branch -M main
+> git remote add origin https://github.com/htktrang/pythongate.git
+> git push -u origin main
+- add .gitignore
+- setup python working directory
+> py -m venv venv
